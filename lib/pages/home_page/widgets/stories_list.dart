@@ -10,7 +10,7 @@ class StoriesList extends StatelessWidget {
     final mobile = ResponsiveWrapper.of(context).isMobile;
 
     return Container(
-      margin: EdgeInsets.symmetric(vertical: mobile ? 15 : 35),
+      margin: EdgeInsets.only(top: mobile ? 15 : 35),
       height: 110,
       child: ListView.separated(
         padding: const EdgeInsets.symmetric(horizontal: 16),
